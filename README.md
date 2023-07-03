@@ -3,6 +3,8 @@ GM Router is a powerful and user-friendly PHP router designed to handle routing 
 
 **It is compatible with PHP versions 5.6 and above, including PHP 7.x and PHP 8.x**.
 
+**NOTE: Currently there's no documentation since this is a newly created repository, I will create a documentation **
+
 <br>
 
 ## 🌟 Features
