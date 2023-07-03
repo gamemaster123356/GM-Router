@@ -47,3 +47,8 @@ $gmrouter->addRoute('POST', '/login', 'controller', 'AuthController@login');
 ```php
 $gmrouter->dispatch();
 ```
+
+<br>
+
+# 📄 License
+GM Router is licensed under the GNU GPL v3. You can find the full license [here](https://github.com/gamemaster123356/GM-Router/blob/main/LICENSE).
