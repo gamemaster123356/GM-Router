@@ -6,7 +6,7 @@ A flexible and intuitive PHP router for handling routing and middleware in web a
 ## 🌟 Features
 - **Routing:** The router allows you to define routes by specifying the HTTP method(s), URI pattern, and the handler function or controller to be executed when a match is found.
 
-- **Dynamic Route Parameters with Regex Support:** The GMRouter class allows for the definition of dynamic route parameters with regex support. This feature enhances routing by enabling custom constraints on parameter values within URI patterns.
+- **Dynamic Route Parameters with Regex Support:** This allows for the definition of dynamic route parameters with regex support. This feature enhances routing by enabling custom constraints on parameter values within URI patterns.
 
 - **Route Groups:** The router supports route grouping, allowing you to apply common middleware or prefix to a group of routes.
 
