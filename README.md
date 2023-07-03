@@ -16,11 +16,11 @@ A flexible and intuitive PHP router for handling routing and middleware in web a
 
 - **Middleware Grouping:** This enables you to group and apply multiple middleware functions together, simplifying the application of shared logic to specific sets of routes or route groups. This feature enhances code reusability and maintainability by providing an organized approach to managing middleware stacks.
 
-- **Redirects**:** The router provides a method to define route redirects, which redirect requests from one URI to another.
+- **Redirects:** The router provides a method to define route redirects, which redirect requests from one URI to another.
 
 - **Error Handling:** The router allows you to define error handlers for different HTTP status codes. You can specify either a callback function or a file path to handle the errors.
 
-- **Customizable**:** The router supports various options such as specifying the directory for controller classes, middleware classes, CSRF token expiration time, and allowed referers for CSRF protection.
+- **Customizable:** The router supports various options such as specifying the directory for controller classes, middleware classes, CSRF token expiration time, and allowed referers for CSRF protection.
 
 - **CSRF Protection:** The router includes CSRF token handling and validation to protect against cross-site request forgery attacks.
 
