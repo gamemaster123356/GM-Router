@@ -29,23 +29,36 @@ GM Router is a powerful and user-friendly PHP router designed to handle routing 
 <br>
 
 ## 📘 Usage
-1. Import the GM-Router library into your PHP file:
+> If your using Apache:
+1. Add these lines to you .htaccess file(Replace index.php with the path of the file which is going to have the routes) If you want to specify a different location for the router to place the routes, modify the RewriteBase directive:
+```php
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+```
+
+If you are using Nginx, please refer to the Nginx documentation for configuring URL rewriting with PHP
+
+
+2. Import the GM-Router library into your PHP file:
 ```php
 include('THE PATH WHERE gm-router.php IS STORED');
 ```
 
-2. Create an instance of GMRouter class:
+3. Create an instance of GMRouter class:
 ```php
 $gmrouter = new GMRouter();
 ```
 
-3. Configure your routes:
+4. Configure your routes:
 ```php
 $gmrouter->addRoute('GET', '/home', 'controller', 'HomeController@index');
 $gmrouter->addRoute('POST', '/login', 'controller', 'AuthController@login');
 ```
 
-3. Run the router to dispatch the appropriate route handler(NOTE: This line SHOULD be added AFTER adding all your routes):
+5. Run the router to dispatch the appropriate route handler(NOTE: This line SHOULD be added AFTER adding all your routes):
 ```php
 $gmrouter->dispatch();
 ```
