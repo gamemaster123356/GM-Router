@@ -29,7 +29,7 @@ GM Router is a powerful and user-friendly PHP router designed to handle routing 
 <br>
 
 ## 📘 Usage
-1. Add these lines to you .htaccess file(Replace index.php with the path of the file which is going to have the routes) If you want to specify a different location for the router to place the routes, modify the RewriteBase directive:
+1. Add these lines to you .htaccess file(Replace index.php with the path of the file which is going to have the routes) If you want to specify a different location for the router to place the routes, modify the RewriteBase directive (NOTE: If you are using Nginx, please refer to the Nginx documentation for configuring URL rewriting with PHP):
 ```php
 RewriteEngine On
 RewriteBase /
@@ -37,8 +37,6 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
 ```
-If you are using Nginx, please refer to the Nginx documentation for configuring URL rewriting with PHP
-
 
 2. Import the GM-Router library into your PHP file:
 ```php
