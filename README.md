@@ -31,7 +31,7 @@ GM Router is a powerful and user-friendly PHP router designed to handle routing 
 ## 📘 Usage
 1. Import the GM-Router library into your PHP file:
 ```php
-include('PATH TO THE FOLDER WHERE gm-router.php IS STORED');
+include('THE PATH WHERE gm-router.php IS STORED');
 ```
 
 2. Create an instance of GMRouter class:
