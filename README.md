@@ -1,5 +1,7 @@
 # GM Router
-GM Router is a powerful and user-friendly PHP router designed to handle routing and middleware in web applications. With its flexible and intuitive features, it provides an efficient way to define routes and apply middleware functions. Whether you're building a small website or a large-scale web application, GM Router simplifies the routing process and enhances the overall development experience. **It is compatible with PHP versions 5.6 and above, including PHP 7.x and PHP 8.x**.
+GM Router is a powerful and user-friendly PHP router designed to handle routing and middleware in web applications. With its flexible and intuitive features, it provides an efficient way to define routes and apply middleware functions. Whether you're building a small website or a large-scale web application, GM Router simplifies the routing process and enhances the overall development experience.
+
+**It is compatible with PHP versions 5.6 and above, including PHP 7.x and PHP 8.x**.
 
 <br>
 
