@@ -365,24 +365,6 @@ class GMRouter {
     }
 
     /**
-    * Resolves a controller middleware into a callable.
-    *
-    * @param string $controllerMiddleware The controller middleware in the format "Controller@method".
-    *
-    * @return callable The resolved middleware callable.
-    */
-    private function resolveControllerMiddleware($controllerMiddleware) {
-        [$middleware, $method] = explode('@', $controllerMiddleware);
-
-        $middlewareClass = $this->options['middlewareClassDir']."\\".$middleware."";
-
-        return function () use ($middlewareClass, $method) {
-            $instance = new $middlewareClass();
-            return $instance->$method();
-        };
-    }
-
-    /**
      * Resolves the actual middleware functions for a given set of middleware names.
      *
      * @param array        $middlewares The middleware names to resolve.
