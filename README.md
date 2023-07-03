@@ -6,11 +6,13 @@ A flexible and intuitive PHP router for handling routing and middleware in web a
 ## 🌟 Features
 - **Routing**: The router allows you to define routes by specifying the HTTP method(s), URI pattern, and the handler function or controller to be executed when a match is found.
 
-- **Middleware**: You can attach middleware functions to routes or route groups. Middleware functions are executed before the route handler and can perform tasks such as authentication, authorization, input validation, etc.
+- **Dynamic Route Parameters with Regex Support:** The GMRouter class allows for the definition of dynamic route parameters with regex support. This feature enhances routing by enabling custom constraints on parameter values within URI patterns.
 
 - **Route Groups**: The router supports route grouping, allowing you to apply common middleware or prefix to a group of routes.
 
 - **Named Routes**: You can assign names to routes, making it easier to generate URLs for specific routes.
+
+- **Middleware**: You can attach middleware functions to routes or route groups. Middleware functions are executed before the route handler and can perform tasks such as authentication, authorization, input validation, etc.
 
 - **Redirects**: The router provides a method to define route redirects, which redirect requests from one URI to another.
 
